@@ -34,7 +34,22 @@
                 <a href="https://ph.linkedin.com/in/rolando-mondilla-jr-542774307"><i class='bx bxl-linkedin' ></i></a>
                 <a href="https://www.upwork.com/freelancers/~01528b36fdfbfc79fb?viewMode=1"><i class='bx bxl-upwork' ></i></a>
             </div>
-            <a href="C:\webPortfolio\CV" class="btn" download="MondillaCV.pdf">Download CV</a>
+            <a href="CV/RMJresume.pdf" class="btn" id="downloadLink">Download CV</a>
+
+            <script>
+            document.getElementById('downloadLink').addEventListener('click', function(e) {
+              e.preventDefault();  // Prevent the default link behavior
+              var url = this.getAttribute('href');
+              var filename = this.getAttribute('download');
+              
+              var link = document.createElement('a');
+              link.href = url;
+              link.download = filename;
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            });
+            </script>
         </div>
         <div class="home-img">
             <img src="Images/ako.jpg" alt="">
@@ -52,7 +67,7 @@
     </div>
 </section>
 <section class="services" id="services">
-    <h2 class="heading">Our <span>Services</span></h2>
+    <h2 class="heading">My <span>Services</span></h2>
 
     <div class="services-container">
         <div class="services-box">
