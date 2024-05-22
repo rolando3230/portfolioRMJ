@@ -6,8 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolando Mondilla Jr Portfolio </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>// Import the functions you need from the SDKs you need
+        import { initializeApp } from "firebase/app";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB-0_4C8xHKDNW9BmMC9BOCS4z-AEfYSxQ",
+          authDomain: "portfolio-b98b1.firebaseapp.com",
+          projectId: "portfolio-b98b1",
+          storageBucket: "portfolio-b98b1.appspot.com",
+          messagingSenderId: "697743263123",
+          appId: "1:697743263123:web:90fc39d2edfce8b9509466"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);</script>
 </head>
 <body>
     <header class="header">
@@ -19,6 +38,7 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
+            <a href="#certificates">Cetificates</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -97,8 +117,6 @@
             <img src="Images/agrytify.jpg" alt="">
             <div class="portfolio-layer">
                 <h4>Agritify</h4>
-                <p>Agritify is an innovative mobile application designed to help farmers and gardeners detect plant diseases quickly and efficiently. By simply uploading a picture of the plant, users can receive accurate diagnoses and detailed information about potential diseases. </p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
         <div class="portfolio-box">
@@ -106,7 +124,6 @@
             <div class="portfolio-layer">
                 <h4>TradeSync</h4>
                 <p>TradeSync is a versatile mobile application designed for trading items, whether used or new. The app provides a seamless platform for users to list their items and explore a wide range of goods available for trade. </p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
         <div class="portfolio-box">
@@ -114,7 +131,6 @@
             <div class="portfolio-layer">
                 <h4>Vetinspect Inspector</h4>
                 <p>VetInspect is a comprehensive mobile application designed for the submission and management of livestock inspection data across Davao City. The app streamlines the process for veterinary inspectors to record and submit their findings, ensuring accurate and timely data collection.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
         <div class="portfolio-box">
@@ -122,7 +138,6 @@
             <div class="portfolio-layer">
                 <h4>Assessment tool</h4>
                 <p>Assessment is a dynamic web application designed to evaluate and enhance student skills across various courses. The app provides a comprehensive platform for educators to create and administer assessments tailored to different subjects and skill levels.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
         <div class="portfolio-box">
@@ -130,7 +145,6 @@
             <div class="portfolio-layer">
                 <h4>Vet Inspect Admin</h4>
                 <p>This app integrates advanced data analytics to facilitate the accomplishment and consolidation of inspection reports. </p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
             </div>
         </div>
         <div class="portfolio-box">
@@ -138,14 +152,108 @@
             <div class="portfolio-layer">
                 <h4>CityLoads</h4>
                 <p>CityLoad is a versatile web application designed for posting and managing real estate listings, including properties for sale, Airbnb rentals, and staycation accommodations.</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="certificates" id="certificates">
+    <h2 class="heading"><span> Certificates</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="Images/cert1.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Information Technology Specialist</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert15.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Flutter & Firebase Chat APP</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert4.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Information Technology Specialist</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert2.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Python Development Essential</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert6.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Foundation of Web Development: CSS, Bootstrap, JS, React</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert14.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Code Your Future</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert11.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Cyber Security Frontier: Emerging Trends and Technologies</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert3.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Startup Summit 2023</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert7.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Flutter Rest Movie App: Master Flutter Rest API Development</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert8.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Build from Scratch a Modern Rest API with PHP 8</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert9.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>QR Code Generator Using Javascript</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert10.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Django for Beginners</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert13.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Dean Lister Certificate</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert12.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Master Course in Cyber Security & Cyber Security Awareness</h4>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="Images/cert5.png" alt="">
+            <div class="portfolio-layer">
+                <h4>National Certificate NCII</h4>
             </div>
         </div>
     </div>
 </section>
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="#">
+    <form>
         <div class="input-box">
             <input type="text" placeholder="Full Name">
             <input type="email" placeholder="Email Address">
@@ -159,9 +267,10 @@
     </form>
 </section>
 
+
 <footer class="footer">
     <div class="footer-text">
-        <p>Copyright &copy; 2024 by Rolando Mondilla Jr All Rights Reserved.</p>
+        <p><i class="fas fa-envelope"></i> rolandomondillajr143@gmail.com | <i class="fas fa-phone"></i> 09515199546</p>
     </div>
 
     <div class="footer-iconTop">
