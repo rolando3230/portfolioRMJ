@@ -18,12 +18,12 @@ window.onscroll = () => {
     console.log('Scrolling detected');
     let top = window.scrollY; // Corrected here
     console.log('ScrollY:', top);
-    
+
     section.forEach(sec => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-        
+
         console.log('Section:', id, 'Offset:', offset, 'Height:', height);
 
         if (top >= offset && top < offset + height) {
@@ -63,4 +63,24 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 100,
     backDelay: 1000,
     loop: true,
+});
+
+const contactForm = document.getElementById('contact');
+const submitButton = contactForm.querySelector('input[type="submit"]');
+
+submitButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Show success message
+    Swal.fire({
+        icon: 'success',
+        title: 'Submitted Successfully!',
+        text: 'Your message has been sent.',
+        timer: 3000, // Close after 3 seconds
+        timerProgressBar: true,
+        showConfirmButton: false
+    });
+
+    // Reset form fields
+    contact.reset();
 });
