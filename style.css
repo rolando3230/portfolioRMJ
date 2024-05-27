@@ -598,6 +598,7 @@ span {
 }
 
 .experience .image img {
+    filter: grayscale(40%);
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
@@ -645,5 +646,7 @@ span {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    filter: grayscale(70%);
 }
+
 
