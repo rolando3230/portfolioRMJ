@@ -97,7 +97,7 @@ section{
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
-    object-fit: cover; /* or contain, based on your preference */
+    object-fit: cover; 
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -187,7 +187,7 @@ span {
     width: 25vw;
     height: 25vw;
     border-radius: 50%;
-    object-fit: cover; /* or contain, based on your preference */
+    object-fit: cover; 
     
 }
 
@@ -280,11 +280,11 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    aspect-ratio: 1/1; /* Maintain aspect ratio 1:1 */
+    aspect-ratio: 1/1; 
     object-fit: contain;
     transition: .5s ease;
-    border: 2px solid #ccc; /* Add a 2px solid border */
-    box-sizing: border-box; /* Include the border in the width calculation */
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
 }
 
 
@@ -342,9 +342,9 @@ span {
 
 }
 
-.contact{
-    background: var(--second-bg-color);   
 
+.contact{
+    background: var(--second-bg-color);
 }
 
 .contact h2{
@@ -564,3 +564,86 @@ span {
 .navbar a.active {
     color: var(--main-color);
 }
+
+.experience{
+    background: #323946;
+}
+
+.experience .content {
+    display: flex;
+   justify-content: center;
+}
+.experience .text {
+    flex: 1;
+    font-size: medium;
+    margin-right: 20px;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+}
+
+.experience:hover .text {
+    transform: translateX(0);
+}
+
+
+.experience .image {
+    flex: 1;
+    text-align: right;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+}
+
+.experience:hover .image {
+    transform: translateX(0);
+}
+
+.experience .image img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+
+.experience2 .content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.experience2 .text {
+    flex: 1;
+    font-size: medium;
+    margin-right: 20px;
+    margin-left: 20px; 
+    margin-bottom: 20px; 
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1s;
+    transition: .5s ease;
+}
+
+.experience2:hover .text {
+    opacity: 1;
+    transform: translateX(0);
+}
+.experience2 .image {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 69px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.experience2:hover .image {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.experience2 .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
