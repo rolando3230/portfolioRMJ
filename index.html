@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://unpkg.com/scrollreveal"></script>
     <meta charset="UTF-8">
@@ -14,20 +15,21 @@
         import { initializeApp } from "firebase/app";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-        
+
         // Your web app's Firebase configuration
         const firebaseConfig = {
-          apiKey: "AIzaSyB-0_4C8xHKDNW9BmMC9BOCS4z-AEfYSxQ",
-          authDomain: "portfolio-b98b1.firebaseapp.com",
-          projectId: "portfolio-b98b1",
-          storageBucket: "portfolio-b98b1.appspot.com",
-          messagingSenderId: "697743263123",
-          appId: "1:697743263123:web:90fc39d2edfce8b9509466"
+            apiKey: "AIzaSyB-0_4C8xHKDNW9BmMC9BOCS4z-AEfYSxQ",
+            authDomain: "portfolio-b98b1.firebaseapp.com",
+            projectId: "portfolio-b98b1",
+            storageBucket: "portfolio-b98b1.appspot.com",
+            messagingSenderId: "697743263123",
+            appId: "1:697743263123:web:90fc39d2edfce8b9509466"
         };
-        
+
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);</script>
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
@@ -41,7 +43,7 @@
             <a href="#certificates">Certificates</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
-            
+
         </nav>
     </header>
     <section class="home" id="home">
@@ -49,28 +51,31 @@
             <h3>Hello, It's Me</h3>
             <h1>Rolando Mondilla Jr</h1>
             <h3>And Im a <span class="multiple-text"></span></h3>
-            <p>I am a young, ambitious, and driven programmer  passionate about learning and mastering programming languages, with a goal to tackle complex problems and make a positive impact through my work.</p>
+            <p>I am a young, ambitious, and driven programmer passionate about learning and mastering programming
+                languages, with a goal to tackle complex problems and make a positive impact through my work.</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100040047935912"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://github.com/rolando3230"><i class='bx bxl-github' ></i></a>
-                <a href="https://ph.linkedin.com/in/rolando-mondilla-jr-542774307"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.upwork.com/freelancers/~01528b36fdfbfc79fb?viewMode=1"><i class='bx bxl-upwork' ></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100040047935912"><i
+                        class='bx bxl-facebook-circle'></i></a>
+                <a href="https://github.com/rolando3230"><i class='bx bxl-github'></i></a>
+                <a href="https://ph.linkedin.com/in/rolando-mondilla-jr-542774307"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.upwork.com/freelancers/~01528b36fdfbfc79fb?viewMode=1"><i
+                        class='bx bxl-upwork'></i></a>
             </div>
             <a href="CV/RMJresume.pdf" class="btn" id="downloadLink">Download CV</a>
 
             <script>
-            document.getElementById('downloadLink').addEventListener('click', function(e) {
-              e.preventDefault();  // Prevent the default link behavior
-              var url = this.getAttribute('href');
-              var filename = this.getAttribute('download');
-              
-              var link = document.createElement('a');
-              link.href = url;
-              link.download = filename;
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            });
+                document.getElementById('downloadLink').addEventListener('click', function (e) {
+                    e.preventDefault();  // Prevent the default link behavior
+                    var url = this.getAttribute('href');
+                    var filename = this.getAttribute('download');
+
+                    var link = document.createElement('a');
+                    link.href = url;
+                    link.download = filename;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
             </script>
         </div>
         <div class="home-img">
@@ -78,391 +83,460 @@
         </div>
     </section>
     <section class="about" id="about">
-    <div class="about-img">
-        <img src="Images/pogi.jpg" alt="">
-    </div>
-    <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>FullStacK Developer</h3>
-        <p>I am a seasoned Flutter developer with over three years of experience in creating mobile and web applications. Throughout my career, I have collaborated with various clients, delivering high-quality solutions that meet their specific needs. I have a proven track record of deploying successful projects across multiple platforms.</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
-</section>
-<section class="skills" id="about">
-    <h2 class="heading"><span>Skills:</span></h2>
-    <div class="skill-row">
-        <div class="skill">
-            <div class="skill-name"><h2>Flutter</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-            </div>
+        <div class="about-img">
+            <img src="Images/pogi.jpg" alt="">
         </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Laravel</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>JavaScript</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>React</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Firebase</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-            </div>
-        </div>
-    </div>
-    <div class="skill-row">
-        <div class="skill">
-            <div class="skill-name"><h2>Java</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>PHP</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Python</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Bubble.io</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>WordPress</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-    </div>
-     <div class="skill-row">
-        <div class="skill">
-            <div class="skill-name"><h2>Django</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>CSS</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Html</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Vue.js</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="skill-name"><h2>Figma</h2></div>
-            <div class="skill-level">
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled"></div>
-                <div class="box filled2"></div>
-                <div class="box"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="services" id="services">
-    <h2 class="heading">My <span>Services</span></h2>
-
-    <div class="services-container">
-        <div class="services-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Web Development</h3>
-            <p>Experienced web developer skilled in Laravel, Flutter, Python, CSS, React, Bootstrap, WordPress, Bubble, and Tailwind. Proficient in building dynamic web applications. </p>
-            <a href="#" class="btn">Read More</a>
-        </div>  
-        <div class="services-box">
-            <i class='bx bx-paint'></i>
-            <h3>Graphic Design</h3>
-            <p>Proficient in graphic design, utilizing tools like Figma, Adobe Photoshop, and Adobe Illustrator to create visually appealing and impactful designs. With a keen eye for detail and creativity. </p>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>FullStacK Developer</h3>
+            <p>I am a seasoned Flutter developer with over three years of experience in creating mobile and web
+                applications. Throughout my career, I have collaborated with various clients, delivering high-quality
+                solutions that meet their specific needs. I have a proven track record of deploying successful projects
+                across multiple platforms.</p>
             <a href="#" class="btn">Read More</a>
         </div>
-        <div class="services-box">
-            <i class='bx bx-mobile-vibration'></i>
-            <h3>Mobile Development</h3>
-            <p> Experienced in mobile development, specializing in Flutter to create cross-platform applications.Skilled in integrating APIs and third-party packages to enhance app functionality and user experience</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </div>
-</section>
-<section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest<span> Project</span></h2>
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="Images/agrytify.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Agritify</h4>
+    </section>
+    <section class="skills" id="about">
+        <h2 class="heading"><span>Skills:</span></h2>
+        <div class="skill-row">
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Flutter</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Laravel</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>JavaScript</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>React</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Firebase</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                </div>
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/tradesync.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>TradeSync</h4>
-                <p>TradeSync is a versatile mobile application designed for trading items, whether used or new. The app provides a seamless platform for users to list their items and explore a wide range of goods available for trade. </p>
+        <div class="skill-row">
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Java</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>PHP</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Python</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Bubble.io</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>WordPress</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                    <div class="box"></div>
+                </div>
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/vetinspect.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Vetinspect Inspector</h4>
-                <p>VetInspect is a comprehensive mobile application designed for the submission and management of livestock inspection data across Davao City. The app streamlines the process for veterinary inspectors to record and submit their findings, ensuring accurate and timely data collection.</p>
+        <div class="skill-row">
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Django</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>CSS</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Html</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Vue.js</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <h2>Figma</h2>
+                </div>
+                <div class="skill-level">
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled"></div>
+                    <div class="box filled2"></div>
+                    <div class="box"></div>
+                </div>
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/assessment.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Assessment tool</h4>
-                <p>Assessment is a dynamic web application designed to evaluate and enhance student skills across various courses. The app provides a comprehensive platform for educators to create and administer assessments tailored to different subjects and skill levels.</p>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Experienced web developer skilled in Laravel, Flutter, Python, CSS, React, Bootstrap, WordPress,
+                    Bubble, and Tailwind. Proficient in building dynamic web applications. </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>Proficient in graphic design, utilizing tools like Figma, Adobe Photoshop, and Adobe Illustrator to
+                    create visually appealing and impactful designs. With a keen eye for detail and creativity. </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-mobile-vibration'></i>
+                <h3>Mobile Development</h3>
+                <p> Experienced in mobile development, specializing in Flutter to create cross-platform
+                    applications.Skilled in integrating APIs and third-party packages to enhance app functionality and
+                    user experience</p>
+                <a href="#" class="btn">Read More</a>
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/vetinspect.png" alt="">
-            <div class="portfolio-layer">
-                <h4>Vet Inspect Admin</h4>
-                <p>This app integrates advanced data analytics to facilitate the accomplishment and consolidation of inspection reports. </p>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest<span> Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="Images/agrytify.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Agritify</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/tradesync.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>TradeSync</h4>
+                    <p>TradeSync is a versatile mobile application designed for trading items, whether used or new. The
+                        app provides a seamless platform for users to list their items and explore a wide range of goods
+                        available for trade. </p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/vetinspect.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Vetinspect Inspector</h4>
+                    <p>VetInspect is a comprehensive mobile application designed for the submission and management of
+                        livestock inspection data across Davao City. The app streamlines the process for veterinary
+                        inspectors to record and submit their findings, ensuring accurate and timely data collection.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/assessment.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Assessment tool</h4>
+                    <p>Assessment is a dynamic web application designed to evaluate and enhance student skills across
+                        various courses. The app provides a comprehensive platform for educators to create and
+                        administer assessments tailored to different subjects and skill levels.</p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/vetinspect.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Vet Inspect Admin</h4>
+                    <p>This app integrates advanced data analytics to facilitate the accomplishment and consolidation of
+                        inspection reports. </p>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cityload.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>CityLoads</h4>
+                    <p>CityLoad is a versatile web application designed for posting and managing real estate listings,
+                        including properties for sale, Airbnb rentals, and staycation accommodations.</p>
+                </div>
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/cityload.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>CityLoads</h4>
-                <p>CityLoad is a versatile web application designed for posting and managing real estate listings, including properties for sale, Airbnb rentals, and staycation accommodations.</p>
+    </section>
+    <section class="certificates" id="certificates">
+        <h2 class="heading"><span> Certificates</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="Images/magna.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Academic Achievement</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert15.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Flutter & Firebase Chat APP</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Information Technology Specialist</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Python Development Essential</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Foundation of Web Development: CSS, Bootstrap, JS, React</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert14.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Code Your Future</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert11.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Cyber Security Frontier: Emerging Trends and Technologies</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Startup Summit 2023</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert7.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Flutter Rest Movie App: Master Flutter Rest API Development</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert8.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Build from Scratch a Modern Rest API with PHP 8</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert9.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>QR Code Generator Using Javascript</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert10.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Django for Beginners</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert13.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Dean Lister Certificate</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert12.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Master Course in Cyber Security & Cyber Security Awareness</h4>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="Images/cert5.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>National Certificate NCII</h4>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="certificates" id="certificates">
-    <h2 class="heading"><span> Certificates</span></h2>
-    <div class="portfolio-container">
-        <div class="portfolio-box">
-            <img src="Images/cert1.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Information Technology Specialist</h4>
+    </section>
+    <section class="experience" id="experience">
+        <h2 class="heading"> <span>Experience</span></h2>
+        <div class="content">
+            <div class="text">
+                Interning at <span>Jairosoft Inc.</span> was a pivotal experience that significantly contributed to my
+                growth as a developer, particularly in Bubble.io development. From the start, it was a challenging
+                journey that tested my skills and pushed me out of my comfort zone. However, with the supportive
+                environment and incredible mentorship, I was able to navigate through the difficulties and emerge
+                stronger and more knowledgeable.</br></br>The first few weeks were undoubtedly the hardest. As someone
+                relatively new to <span>Bubble.io development</span>, I found myself grappling with the complexities of
+                the platform. The learning curve was steep, and there were moments of frustration when I felt
+                overwhelmed by the tasks at hand. However, instead of letting these challenges deter me, I used them as
+                opportunities to learn and grow.
+                </br></br>One of the key factors that made my internship at Jairosoft Inc. so rewarding was the working
+                environment. The team was incredibly supportive, always willing to lend a helping hand or offer guidance
+                whenever I faced difficulties. This collaborative atmosphere not only made it easier for me to ask for
+                help but also encouraged me to share my ideas and solutions with others.Moreover, I was fortunate to
+                have an incredible mentor who played a pivotal role in my development.
+            </div>
+            <div class="image">
+                <img src="Images/jairosoft.jpg" alt="">
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/cert15.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Flutter & Firebase Chat APP</h4>
+    </section>
+    <section class="experience2" id="experience">
+        <div class="content">
+            <div class="text">
+                My internship journey encompasses not only my time at Jairosoft Inc. but also a <span>technical
+                    internship</span> at the University of Mindanao, where I honed my skills in troubleshooting
+                computers and computer networks. These experiences, though different in nature, were both instrumental
+                in shaping my development as a professional.</br></br>During my technical internship at the
+                <span>University of Mindanao</span>, I was exposed to a variety of challenges that tested my ability to
+                troubleshoot and solve problems related to computers and computer networks. </br></br>This experience
+                was invaluable as it not only enhanced my technical skills but also taught me the importance of safety
+                while performing my duties.Combining these experiences with my internship at Jairosoft Inc., I have
+                developed a comprehensive set of skills that have prepared me for the challenges of the professional
+                world. I have learned the importance of <span>perseverance </span>and <span>resilience</span> the face
+                of challenges
+            </div>
+            <div class="image">
+                <img src="Images/ojt1.jpg" alt="">
             </div>
         </div>
-        <div class="portfolio-box">
-            <img src="Images/cert4.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Information Technology Specialist</h4>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
             </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert2.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Python Development Essential</h4>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
             </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert6.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Foundation of Web Development: CSS, Bootstrap, JS, React</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert14.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Code Your Future</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert11.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Cyber Security Frontier: Emerging Trends and Technologies</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert3.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Startup Summit 2023</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert7.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Flutter Rest Movie App: Master Flutter Rest API Development</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert8.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Build from Scratch a Modern Rest API with PHP 8</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert9.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>QR Code Generator Using Javascript</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert10.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Django for Beginners</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert13.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Dean Lister Certificate</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert12.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>Master Course in Cyber Security & Cyber Security Awareness</h4>
-            </div>
-        </div>
-        <div class="portfolio-box">
-            <img src="Images/cert5.png" alt="">
-            <div class="portfolio-layer">
-                <h4>National Certificate NCII</h4>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="experience" id="experience">
-    <h2 class="heading"> <span>Experience</span></h2>
-    <div class="content">
-        <div class="text">
-            Interning at <span>Jairosoft Inc.</span> was a pivotal experience that significantly contributed to my growth as a developer, particularly in Bubble.io development. From the start, it was a challenging journey that tested my skills and pushed me out of my comfort zone. However, with the supportive environment and incredible mentorship, I was able to navigate through the difficulties and emerge stronger and more knowledgeable.</br></br>The first few weeks were undoubtedly the hardest. As someone relatively new to <span>Bubble.io development</span>, I found myself grappling with the complexities of the platform. The learning curve was steep, and there were moments of frustration when I felt overwhelmed by the tasks at hand. However, instead of letting these challenges deter me, I used them as opportunities to learn and grow.
-        </br></br>One of the key factors that made my internship at Jairosoft Inc. so rewarding was the working environment. The team was incredibly supportive, always willing to lend a helping hand or offer guidance whenever I faced difficulties. This collaborative atmosphere not only made it easier for me to ask for help but also encouraged me to share my ideas and solutions with others.Moreover, I was fortunate to have an incredible mentor who played a pivotal role in my development.
-        </div> 
-        <div class="image">
-            <img src="Images/jairosoft.jpg" alt="">
-        </div>
-    </div>  
-</section>
-<section class="experience2" id="experience">
-    <div class="content">
-        <div class="text">
-            My internship journey encompasses not only my time at Jairosoft Inc. but also a <span>technical internship</span> at the University of Mindanao, where I honed my skills in troubleshooting computers and computer networks. These experiences, though different in nature, were both instrumental in shaping my development as a professional.</br></br>During my technical internship at the <span>University of Mindanao</span>, I was exposed to a variety of challenges that tested my ability to troubleshoot and solve problems related to computers and computer networks. </br></br>This experience was invaluable as it not only enhanced my technical skills but also taught me the importance of safety while performing my duties.Combining these experiences with my internship at Jairosoft Inc., I have developed a comprehensive set of skills that have prepared me for the challenges of the professional world. I have learned the importance of <span>perseverance </span>and <span>resilience</span> the face of challenges        
-        </div> 
-        <div class="image">
-            <img src="Images/ojt1.jpg" alt="">
-        </div>
-    </div>  
-</section>
-<section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <form>
-        <div class="input-box">
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-            <input type="number" placeholder="Mobile Number">
-            <input type="text" placeholder="Email Subject">
-        </div>
-        <textarea name="" id="" col="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
-</section>
+            <textarea name="" id="" col="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
 
 
-<footer class="footer">
-    <div class="footer-text">
-        <p><i class="fas fa-envelope"></i> rolandomondillajr143@gmail.com | <i class="fas fa-phone"></i> 09515199546</p>
-    </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p><i class="fas fa-envelope"></i> rolandomondillajr143@gmail.com | <i class="fas fa-phone"></i> 09515199546
+            </p>
+        </div>
 
-    <div class="footer-iconTop">
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
- <script src="script.js"></script>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
