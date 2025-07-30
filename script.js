@@ -58,7 +58,7 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['FullStack Developer', 'Technical Support Specialist', 'Freelancer'],
+    strings: ['FullStack Developer', 'Desktop Developer', 'Mobile App Developer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -68,7 +68,7 @@ const typed = new Typed('.multiple-text', {
 const contactForm = document.getElementById('contact');
 const submitButton = contactForm.querySelector('input[type="submit"]');
 
-submitButton.addEventListener('click', function(event) {
+submitButton.addEventListener('click', function (event) {
     event.preventDefault(); // Prevent default form submission
 
     // Show success message
